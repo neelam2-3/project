@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact us</title>
+		<link rel="stylesheet" type="text/css" href="contactstyle.css">
+</head>
+<body>
+  <div class="me">
+    <h1>Foot N Fit Company</h1>
+    
+     </div>
+	
+        <section class="section">
+               <header class="header">
+                        <nav class="navbar"> 
+                          <div class="logo">
+                            <img src="logo...jpg" >
+                          </div>
+                            
+                          
+                             <div class="links">
+                                     
+                         
+                              <a href="index.html" > Home</a>                      
+                              <a href="type.html" target="_blank" >About</a>
+                             <a href="women.html" target="_blank" >Women</a>                        
+                             <a href="men.html" target="_blank" >Men</a>                     
+                             <a href="kids.html" target="_blank" >Kids</a>
+                             
+                              <a href="contact.html" target="_blank">Contact</a>
+                              
+                                                   
+                                
+                              </div> 
+                              <div class="mecontainer">
+                                <ion-icon name="search-outline" id="searchButton"></ion-icon>&nbsp;&nbsp;&nbsp;
+                       
+                        <ion-icon name="person"></ion-icon>&nbsp;&nbsp;&nbsp;
+                        <ion-icon name="cart-outline" id="addToCartIcon"></ion-icon>
+                              </div>
+                                                        <!-- Search dialog box -->
+                                                        <div class="dialog" id="searchDialog">
+                                                          <h2>Search</h2>
+                                                          <input type="text" id="searchInput" placeholder="Enter your search query">
+                                                          <button id="searchDialogClose">Close</button>
+                                                        </div>
+                        </nav>
+                        </header>
+                        <div class="dialog" id="addToCartDialog">
+                          <h2>Item Added to Cart!</h2>
+                          <!-- You can customize the content of the dialog as per your requirement -->
+                          <button id="closeDialogButton">Close</button>
+                        </div>
+                        <script>
+                          // Get references to search button and dialog box elements
+                          const searchButton = document.getElementById('searchButton');
+                          const searchDialog = document.getElementById('searchDialog');
+                          const searchDialogClose = document.getElementById('searchDialogClose');
+                        
+                          // Show the search dialog when the search button is clicked
+                          searchButton.addEventListener('click', function() {
+                            searchDialog.style.display = 'block';
+                          });
+                        
+                          // Close the search dialog when the close button is clicked
+                          searchDialogClose.addEventListener('click', function() {
+                            searchDialog.style.display = 'none';
+                          });
+                        
+                          // Optionally, you can also close the search dialog when the user clicks outside of it
+                          window.addEventListener('click', function(event) {
+                            if (event.target === searchDialog) {
+                              searchDialog.style.display = 'none';
+                            }
+                          });
+                        
+                          // Prevent clicks inside the dialog from closing the dialog
+                          searchDialog.addEventListener('click', function(event) {
+                            event.stopPropagation();
+                          });
+                        </script>
+                        <script>
+                          // Get references to add to cart icon and dialog box elements
+                          const addToCartIcon = document.getElementById('addToCartIcon');
+                          const addToCartDialog = document.getElementById('addToCartDialog');
+                          const closeDialogButton = document.getElementById('closeDialogButton');
+                        
+                          // Show the add to cart dialog when the add to cart icon is clicked
+                          addToCartIcon.addEventListener('click', function() {
+                            addToCartDialog.style.display = 'block';
+                          });
+                        
+                          // Close the add to cart dialog when the close button is clicked
+                          closeDialogButton.addEventListener('click', function() {
+                            addToCartDialog.style.display = 'none';
+                          });
+                        
+                          // Optionally, you can also close the add to cart dialog when the user clicks outside of it
+                          window.addEventListener('click', function(event) {
+                            if (event.target === addToCartDialog) {
+                              addToCartDialog.style.display = 'none';
+                            }
+                          });
+                        
+                          // Prevent clicks inside the dialog from closing the dialog
+                          addToCartDialog.addEventListener('click', function(event) {
+                            event.stopPropagation();
+                          });
+                        </script>
+      
+      
+
+<section class="section-hero">
+	<a href="index.html"><ion-icon name="arrow-back" class="back"></ion-icon></a>
+  <h1>Contact</h1>
+ <div class="section-contact container ">
+   <form action="https://formspree.io/f/xeqbvaaz" method="post">
+      <div class="grid1 grid-two wrap">
+        <div>
+            <label for="username"></label>
+           <input type="text" placeholder="Username" id="username" name="username">
+           </div>
+      
+            <div>
+            <label for="email"></label>
+            <input type="email" placeholder="E-mail" id="email" name="email">
+            </div> 
+      </div> 
+      <div>
+        <label for="subject"></label>
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+      </div>  
+      <div>
+        <label for="textarea"></label>
+        <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
+      </div>  
+      <div>
+        <input type="submit" name="submit" id="submit" class="button">
+      </div>
+    </form>
+
+ </div>
+</section>
+<footer class="footer2 section-footer  ">
+   <div class=" grid grid-four wrap justify-content">
+        <div class="f-about  ">
+         <h3>about</h3>
+         <p>The world's largest athletic apparel company, Nike is best known for its footwear, apparel, and equipment. Founded in 1964 as Blue Ribbon Sports, the company became Nike in 1971 after the Greek goddess of victory. One of the most valuable brands among sport businesses, Nike employs over 76,000 people worldwide.</p>
+        </div> 
+           <div class="f-links">
+             <h3>Links</h3>
+             <ul>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="index.html">home</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="type.html">about</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="women.html">women</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="men.html">men</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="kids.html">kids</a></li>
+              <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="contact.html">contact</a></li>
+             </ul>
+           </div>
+           <div class="f-services ">
+             <h3>services</h3>
+             <ul>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">designing</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">marketing</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">athletic footwear</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">apparel</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">services for sports </a></li>
+             </ul>
+           </div>
+           <div class="f-address">
+             <h3> Have a Question?</h3>
+             <address>
+               <div>
+                 <p>
+                    <span><ion-icon name="location-outline" role="img" class="md hydrated"></ion-icon>Amritsar, Punjab.</span> 
+                 </p>
+               </div>
+               <div>
+                 <p>
+                    <span><ion-icon name="call-outline" role="img" class="md hydrated"></ion-icon><a href="tel:+917710620140">+91 7710620140</a></span>  
+                 </p>
+               </div>
+               <div>
+                 <p>
+                    <span><ion-icon name="mail-outline" role="img" class="md hydrated"></ion-icon></span><a href="gmailto:yadavn@gmail.com">yadavn@gmail.com</a> 
+                 </p>
+               </div>
+             </address>
+            </div>
+ </div>
+
+
+           <div class="f-social-icons"> 
+     <a href="https://www.linkedin.com/in/gurleen-kaur-6658ba24b/" target="_blank"><ion-icon  class="linkedin"name="logo-linkedin" role="img"></ion-icon></a>
+
+     <a href="https://github.com/kaurguru" target="_blank"><ion-icon class="github" name="logo-github" role="img"></ion-icon></a>
+
+     <a href="https://www.youtube.com/@coding_with_ashna/videos" target="_blank"><ion-icon class="youtube" name="logo-youtube" role="img"></ion-icon></a>
+         </div>
+
+         <div class="f-credits">
+           <p>Copyright @2023 All rights reserved.</p>
+           
+         </div>
+       
+</footer>
+<script>
+   let dropDown = document.getElementById("dropdown2");
+ function togglemenu(){
+   dropDown.classList.toggle("open2");
+ }
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+   });
+ </script>
+ 
+</body>
+</html>

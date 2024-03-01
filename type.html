@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>about</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="me">
+    <h1>Foot N Fit Company</h1>
+    
+     </div>
+    
+  
+    <section class="section">
+           <header class="header">
+                    <nav class="navbar"> 
+                      <div class="logo">
+                        <img src="logo...jpg" >
+                      </div>
+                         <div class="links">
+                          
+                        
+                              
+                         
+                          <a href="index.html" > Home</a>                      
+                          <a href="type.html" target="_blank" >About</a>
+                         <a href="women.html" target="_blank" >Women</a>                        
+                         <a href="men.html" target="_blank" >Men</a>                     
+                         <a href="kids.html" target="_blank" >Kids</a>
+                         
+                          <a href="contact.html" target="_blank">Contact</a>
+                          
+                                               
+                            
+                          </div> 
+                          <div class="mecontainer">
+                            <ion-icon name="search-outline" id="searchButton"></ion-icon>&nbsp;&nbsp;&nbsp;
+                       
+                        <ion-icon name="person"></ion-icon>&nbsp;&nbsp;&nbsp;
+                        <ion-icon name="cart-outline" id="addToCartIcon"></ion-icon>
+                          </div>
+                                                    <!-- Search dialog box -->
+                                                    <div class="dialog" id="searchDialog">
+                                                      <h2>Search</h2>
+                                                      <input type="text" id="searchInput" placeholder="Enter your search query">
+                                                      <button id="searchDialogClose">Close</button>
+                                                    </div>
+                    </nav>
+                    </header>
+                    <div class="dialog" id="addToCartDialog">
+                      <h2>Item Added to Cart!</h2>
+                      <!-- You can customize the content of the dialog as per your requirement -->
+                      <button id="closeDialogButton">Close</button>
+                    </div>
+                    <script>
+                      // Get references to search button and dialog box elements
+                      const searchButton = document.getElementById('searchButton');
+                      const searchDialog = document.getElementById('searchDialog');
+                      const searchDialogClose = document.getElementById('searchDialogClose');
+                    
+                      // Show the search dialog when the search button is clicked
+                      searchButton.addEventListener('click', function() {
+                        searchDialog.style.display = 'block';
+                      });
+                    
+                      // Close the search dialog when the close button is clicked
+                      searchDialogClose.addEventListener('click', function() {
+                        searchDialog.style.display = 'none';
+                      });
+                    
+                      // Optionally, you can also close the search dialog when the user clicks outside of it
+                      window.addEventListener('click', function(event) {
+                        if (event.target === searchDialog) {
+                          searchDialog.style.display = 'none';
+                        }
+                      });
+                    
+                      // Prevent clicks inside the dialog from closing the dialog
+                      searchDialog.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                      });
+                    </script>
+                    <script>
+                      // Get references to add to cart icon and dialog box elements
+                      const addToCartIcon = document.getElementById('addToCartIcon');
+                      const addToCartDialog = document.getElementById('addToCartDialog');
+                      const closeDialogButton = document.getElementById('closeDialogButton');
+                    
+                      // Show the add to cart dialog when the add to cart icon is clicked
+                      addToCartIcon.addEventListener('click', function() {
+                        addToCartDialog.style.display = 'block';
+                      });
+                    
+                      // Close the add to cart dialog when the close button is clicked
+                      closeDialogButton.addEventListener('click', function() {
+                        addToCartDialog.style.display = 'none';
+                      });
+                    
+                      // Optionally, you can also close the add to cart dialog when the user clicks outside of it
+                      window.addEventListener('click', function(event) {
+                        if (event.target === addToCartDialog) {
+                          addToCartDialog.style.display = 'none';
+                        }
+                      });
+                    
+                      // Prevent clicks inside the dialog from closing the dialog
+                      addToCartDialog.addEventListener('click', function(event) {
+                        event.stopPropagation();
+                      });
+                    </script>
+
+<main>
+  
+  <section>
+
+      <h2>Our Story</h2>
+      <img  src="story.webp" >
+      <p>Welcome to our online store! We started our journey  with a vision to provide high-quality products to our customers at affordable prices. 
+        Over the years, we have grown and expanded our product range to meet the diverse needs of our customers.</p>
+  </section>
+  <section>
+      <h2>Our Mission</h2>
+      <img src="mis2.jpg">
+      <p>At FootFashionHub  we are committed to providing our customers with stylish, comfortable, and high-quality footwear that enhances their everyday experiences. 
+        Our mission is to redefine the way people perceive footwear by offering a diverse range of products that cater to different styles, occasions, and preferences..</p>
+  </section>
+  <section>
+      <h2>Our Team</h2>
+      <img src="team.webp">
+      <p>Behind every great pair of shoes is a dedicated team of individuals who are passionate about footwear and committed to delivering excellence. 
+        At FootFashionHub, our team is comprised of talented professionals from diverse backgrounds, each bringing unique expertise and perspectives to the table..</p>
+      <ul>
+          <li>Neelam - student</li>
+          <li>Kiran - student</li>
+          
+      </ul>
+  </section>
+  <section>
+      <h2>Our Values</h2>
+      <img src="val.webp">
+      <p>At FootFashionHub, we believe in integrity, excellence, and customer satisfaction. These values drive everything we do, 
+        from sourcing products to delivering them to your doorstep.</p>
+   
+  </section>
+  
+</main>
+
+
+
+
+
+
+<!-- /*-------------------------------
+           new arrivals section
+      ------------------------------- */   -->
+      <a name="arrivals">
+        <section class="image-section ">
+
+          
+             <h2>new arrivals</h2>
+              <div class="grid1 grid-three sale-sec images">
+              
+               
+                  <a href="pink.html"> 
+               <div><figure> <img src="jutti.1.webp" class="img1"> <figcaption> Pretty pink embroidery jutti </figcaption>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+                <p>Rs.1000</p></figure></div></a>
+                <a href="red jutti.html"> 
+                <div><figure> <img src="jutti...webp" class="img1"><figcaption>Red embroidery work jutti</figcaption> 
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star-o" ></i>
+                  <p>Rs.1500</p>
+                </figure></div></a>
+                <a href="type1.html"> 
+                <div><figure>   <img src="jutti3.webp" class="img1"><figcaption>Blue Droplets Handcrafted Women's Punjabi Leather Jutti</figcaption> 
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star-o" ></i>
+                  <p>Rs.1500</p>
+                </figure></div></a>
+                <a href="golden jutti.html"> 
+                <div><figure> <img src="jutti4.jpg" class="img1"><figcaption>Golden jutti</figcaption> 
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star" ></i>
+                  <i class="fa fa-star-o" ></i>
+                  <p>Rs.1000</p>
+                </figure></div></a>
+              </div></section>
+               </a>
+               <a name="arrivals">
+                <section class="image-section ">
+                     
+                      <div class="grid1 grid-three sale-sec images">
+                        <a href="product details.html"> 
+                        <div><figure> <img src="heels.jpg" class="img1"><figcaption>Pencil heels</figcaption>
+                         <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star-o" ></i>
+                        
+                          <p>Rs.2200</p>
+                        
+                          </figure></div></a>
+                          <a href="sneakers pink.html"> 
+                       <div><figure> <img src="s1.jpg" class="img1"> <figcaption>Sneakers  </figcaption>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                        <p>Start from 500to5000</p></figure></div></a>
+                        <a href="shoes type heels.html">
+                        <div><figure> <img src="heels2.jpg" class="img1"><figcaption>Shoes type heels</figcaption> 
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star-o" ></i>
+                          <p>Rs.2000</p>
+                        </figure></div></a>
+                       
+                        <a href="black heels.html"> 
+                        <div><figure> <img src="heels4.webp" class="img1"><figcaption>Black heels</figcaption> 
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star" ></i>
+                          <i class="fa fa-star-o" ></i>
+                          <p>Rs.900</p>
+                        </figure></div></a>
+                      </div></section>
+                       </a>
+                       <a name="arrivals">
+                        <section class="image-section ">
+                             
+                              <div class="grid1 grid-three sale-sec images">
+                              <a href="light.html">
+                                <div><figure> <img src="kids.webp" class="img1"><figcaption>Shoes for children</figcaption>
+                                 <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star-o" ></i>
+                                
+                                  <p>Rs.1000</p>
+                                
+                                  </figure></div></a>
+                                  <a href="kids.html">
+                               <div><figure> <img src="kids1.jpeg" class="img1"> <figcaption>Indoor sleepers  </figcaption>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star" ></i>
+                                <i class="fa fa-star-o" ></i>
+                                <p>Start from 500</p></figure></div></a>
+                                <a href="mochi1.html">
+                                <div><figure> <img src="kids2.webp" class="img1"><figcaption>Mochi sandals</figcaption> 
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star-o" ></i>
+                                  <p>Rs.700</p>
+                                </figure></div></a>
+                                <a href="mochi.html">
+                                <div><figure> <img src="kids3.webp" class="img1"><figcaption>Formal sandals</figcaption> 
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star" ></i>
+                                  <i class="fa fa-star-o" ></i>
+                                  <p>Rs.800</p>
+                                </figure></div></a>
+                               
+                              </div></section>
+                               </a>
+                               <section class="section-swiper">
+                                <div class="swiper-div">
+                                  <h1>latest fashion</h1>
+                                <swiper-container class="Swiper" pagination="true" pagination-type="progressbar" navigation="true">
+                                
+                                  
+                                 
+                                  <swiper-slide><figure> <img src="pair (1).jpg" class="img-swip"><figcaption> Made for Amazon -Best Deals on Shoes <span> <mark> Up to 55% off</mark> </span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (2).jpg" class="img-swip"><figcaption>Made for Amazon -Best Deals on Shoes <span><mark> Up to 50% off</mark> </span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (3).jpg" class="img-swip"><figcaption> Made for Amazon -Best Deals on Shoes <span><mark> Up to 35% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (4).jpg" class="img-swip"><figcaption> Made for Amazon -Best Deals on Shoes<span><mark>Up to 45% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (5).jpg" class="img-swip"><figcaption> Made for Amazon -Best Deals on Shoes <span> <mark>Up to 46% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (6).jpg" class="img-swip"><figcaption> Made for Amazon -Best Deals on Shoes <span> <mark>Up to 40% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (7).jpg" class="img-swip"><figcaption> Made for Amazon -Best Deals on Shoes<span> <mark> Up to 52% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (9).jpg" class="img-swip"><figcaption>Made for Amazon -Best Deals on Shoes <span> <mark>Up to 60% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (10).jpg" class="img-swip"><figcaption> Made for Amazon -Best Deals on Shoes <span><mark>Up to 50% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (11).jpg" class="img-swip"><figcaption> Made for Amazon -Best Deals on Shoes <span> <mark> Up to 55% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (12).jpg" class="img-swip"><figcaption>Made for Amazon -Best Deals on Shoes <span> <mark>Up to 55% off</mark></span></figcaption> </figure></swiper-slide>
+                                  <swiper-slide><figure> <img src="pair (13).jpg" class="img-swip"><figcaption>Made for Amazon -Best Deals on Shoes <span><mark> Up to 39% off</mark></span></figcaption> </figure></swiper-slide>
+                        
+                                </swiper-container>
+                                </div>
+                              </section>
+                              <footer class="footer2 section-footer  ">
+                                <div class=" grid grid-four wrap justify-content">
+                                     <div class="f-about  ">
+                                      <h3>about</h3>
+                                      <p>The world's largest athletic apparel company, Nike is best known for its footwear, apparel, and equipment. Founded in 1964 as Blue Ribbon Sports, the company became Nike in 1971 after the Greek goddess of victory. One of the most valuable brands among sport businesses, Nike employs over 76,000 people worldwide.</p>
+                                     </div> 
+                                        <div class="f-links">
+                                          <h3>Links</h3>
+                                          <ul>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="index.html">home</a></li>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="type.html">about</a></li>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="women.html">women</a></li>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="men.html">men</a></li>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="kids.html">kids</a></li>
+                                           <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="contact.html">contact</a></li>
+                                          </ul>
+                                        </div>
+                                        <div class="f-services ">
+                                          <h3>services</h3>
+                                          <ul>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">designing</a></li>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">marketing</a></li>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">athletic footwear</a></li>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">apparel</a></li>
+                                            <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">services for sports </a></li>
+                                          </ul>
+                                        </div>
+                                        <div class="f-address">
+                                          <h3> Have a Question?</h3>
+                                          <address>
+                                            <div>
+                                              <p>
+                                                 <span><ion-icon name="location-outline" role="img" class="md hydrated"></ion-icon>Amritsar, Punjab.</span> 
+                                              </p>
+                                            </div>
+                                            <div>
+                                              <p>
+                                                 <span><ion-icon name="call-outline" role="img" class="md hydrated"></ion-icon><a href="tel:+917710620140">+91 7710620140</a></span>  
+                                              </p>
+                                            </div>
+                                            <div>
+                                              <p>
+                                                 <span><ion-icon name="mail-outline" role="img" class="md hydrated"></ion-icon></span><a href="gmailto:yadavn@gmail.com">yadavn@gmail.com</a> 
+                                              </p>
+                                            </div>
+                                          </address>
+                                         </div>
+                              </div>
+                            
+                            
+                                        <div class="f-social-icons"> 
+                                  <a href="https://www.linkedin.com/in/gurleen-kaur-6658ba24b/" target="_blank"><ion-icon  class="linkedin"name="logo-linkedin" role="img"></ion-icon></a>
+                            
+                                  <a href="https://github.com/kaurguru" target="_blank"><ion-icon class="github" name="logo-github" role="img"></ion-icon></a>
+                            
+                                  <a href="https://www.youtube.com/@coding_with_ashna/videos" target="_blank"><ion-icon class="youtube" name="logo-youtube" role="img"></ion-icon></a>
+                                      </div>
+                            
+                                      <div class="f-credits">
+                                        <p>Copyright @2023 All rights reserved .</p>
+                                        
+                                      </div>
+                                      <div style="float: right;">
+                                        <a href="#up"> <ion-icon name="arrow-up-circle-outline" class="arrow uper " ></ion-icon></a> 
+                                      </div>
+                             
+                            </footer>
+                            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                            <script>
+                              let dropDown = document.getElementById("dropdown2");
+                            function togglemenu(){
+                              dropDown.classList.toggle("open2");
+                            }
+                            </script>
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+                             <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                      
+                            <script>
+                              var swiper = new Swiper(".mySwiper", {
+                                slidesPerView: 3,
+                                spaceBetween: 30,
+                                pagination: {
+                                  el: ".swiper-pagination",
+                                  clickable: true,
+                                },
+                              });
+                            </script>
+             
+</body>
+</html>                            

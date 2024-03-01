@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puma Shoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      body{
+       padding:0px ;
+       margin:0px ;
+      background-color:rgb(224, 221, 221);
+      }
+      .containe{
+       
+      }
+      .child-container{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+      }
+      .card-container{
+       height: 480px;
+       width: 335px;  
+       margin: 20px;
+      position: relative;
+      padding: 10px;
+      margin-top:70px;
+      border: 1px solid black;
+      }
+      .shoes-img{
+      height: 230px;
+      width: 250px;
+      display: block;
+      margin: 10px auto;
+      cursor: pointer;
+      filter: drop-shadow(10px 10px 10px 10px black);
+   
+      }
+      .title{
+       font-size: 18px;
+       text-align: center;
+       font-family: cursive;
+       font-weight: normal;
+      }
+      .title-1{
+       font-size: 18px;
+       text-align: center;
+       font-family: cursive;
+       font-weight: normal;
+       color: red;
+      }
+      .rs{
+       text-align: center;
+       font-size: 30px;
+      }
+      .star{
+       height: 25px;
+     margin: 2px;
+     cursor: pointer;
+      
+      }
+      .star-container{
+      display: block;
+      margin: 10px 300px;
+      }
+      .like-btn{
+       height: 30px;
+       position: absolute;
+       top: 2px;
+       right: 2px;
+       margin: 8px;
+       cursor: pointer;
+      }
+      .dot-img{
+         height: 30px;
+         cursor: pointer;
+      }
+      .dot-container{
+         display: block;
+         margin: 0px 100px;
+      }
+      .star-container{
+      display: block;
+      margin: 10px 90px;
+      }
+      .puma-img{
+       height: 350px;
+       width: 100%;
+       margin-top: 50px;
+       margin-bottom: 50px;
+      }
+      
+      .h{
+           background-color: rgb(181, 175, 175);
+           text-transform: none;
+         }
+         .future{
+           width: 100%;
+           height: 550px;
+           background-color: #181818;
+           padding: 30px;
+           margin-top: 100px;
+           display: flex;
+           flex-wrap: wrap;
+         }
+         .future-card{
+           height: 350px;
+           width: 300px;
+           margin: 20px;
+         }
+         .text-future{
+           text-align: center;
+           font-size: 30px;
+           color: white;
+   
+         }
+         .text-future-1{
+           text-align: center;
+           font-size: 20px;
+           margin: 20px;
+           color: white;
+           cursor: pointer;
+         }
+         .text-future-2{
+           text-align: center;
+           font-size: 20px;
+           margin: 20px;
+           color: white;
+           cursor: pointer;
+         }
+         .img-futer{
+           height: 30px;
+           margin: 20px;
+           cursor: pointer;
+           border-radius: 50%;
+         }
+          .img-futer:hover{
+           box-shadow: 1px 1px 2px 2px gray;
+         }
+         .text-future2{
+           text-align: center;
+           font-size: 20px;
+           color: white;
+           margin-top: 50px;
+         }
+         .india-img{
+           height: 30px;
+           margin: 0px auto;
+           display: block;
+         }
+         .india{
+           font-size: 15px;
+           color: white;
+            text-align: center;
+         }
+         .india-card{
+           height: 80px;
+           width: 170px;
+           padding: 10px;
+           margin: 0px auto;
+           border: 1px solid white;
+         }
+         .puma-img-1{
+           width: 100%;
+         }
+      
+   @media only screen and (max-width: 480px){
+      .dot-container{
+         display: block;
+         margin: 0px 60px;
+      }
+      .future{
+           width: 100%;
+           height: 1950px;
+           background-color: #181818;
+           padding: 30px;
+           margin-top: 100px;
+           display: flex;
+           
+   }
+   }
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+   }
+   body{
+      background-color:#0a0927;
+   }
+   html{
+   font-size:70% ;
+   scroll-behavior: smooth;
+   
+   }
+   :root{
+   
+      --poppines: Poppins, sans-serif;
+      --awesome: font-awesome;
+      --maincolor:#c38eca;
+      --tintmain:#cab08e5e;
+      --lightmain:#cab08ea1;
+      --blur:#989aa291;
+      --filter: blur(20px);
+      --bg: #989aa291;
+   }
+   a{
+      text-decoration: none;
+   }
+   a:hover{
+      text-decoration: none;}
+   h1,h2,h3,h4,h5,h6{
+         font-family: var(--poppines);
+   
+      }
+   
+    li{
+      list-style: none;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+   .grid{
+      display: grid;
+        gap: 8rem;
+        
+   }
+   .grid1{display: grid;
+      gap: 2.5rem;
+   }
+   .grid-two {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .grid-three {
+      grid-template-columns: repeat(3, 1fr);
+   }
+   .grid-six {
+      grid-template-columns: repeat(6, 1fr);
+   }
+   .grid-four {
+      grid-template-columns: repeat(4, 1fr);
+   }
+   .me h1{
+   font-size: 600%;
+  text-align: center;
+  background-repeat: no-repeat;
+background-image: url(shoes.jpg);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+}
+   
+      /* ----------------------------------------------
+   HEADER SECTION start
+   ----------------------------------------------
+   */
+   
+   .header{
+      width: 100%;
+      height: 8rem;
+      
+   /*   display: flex;*/
+   }
+   .navbar{ 
+            font-size:20px;
+   /*          background-color: var(black);*/
+           backdrop-filter: blur(20px);
+             width:100%;
+             height: 9vh;
+             text-transform:capitalize; 
+           
+         color: antiquewhite;
+            
+           }
+           .navbar .logo{
+     padding:.5rem ;
+      float: left;
+      margin: 0 1.5rem;
+   }
+   .logo img{
+      width: 10rem;
+      height: 8rem;
+      padding:.5rem ;
+   margin-top: -190px;
+   }
+   .navbar .links a{
+          color: rgb(242, 239, 244);
+            text-decoration: none;
+            padding:.5rem 1.2rem;
+            font-weight: 570;
+            margin-right: 5rem;
+            line-height: 7rem;
+            font-size: 2rem;
+            font-family: var(--poppines);
+             transition: 0.6s all;
+                border-radius: 20px;
+          }
+   .navbar .links a:hover{
+   /*   background-color: var(--maincolor);*/
+      color: whitesmoke;
+       border:2px solid white;
+       font-weight: 700;
+   
+   }
+   select{
+     color: var(--maincolor);
+      background:none;
+      border: none;
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+      text-align: center;
+      font-weight: 570;
+       background-color: transparent;
+   
+   }
+   .links select:hover{
+   /*   background-color: var(--maincolor);*/
+      color: whitesmoke;
+      border-radius: 20px;
+      font-weight: 700;
+   }
+   select option {
+    background: none;
+    background-color: black;
+   /*   text-align: center;*/
+   border-radius: 20px;
+   }
+   select option:focus{
+      outline: none;
+   }
+   .menu ,.menu2{
+      float: right;
+      margin: 2rem;
+      width: 7rem;
+      height: 5rem;
+      color: white;
+      display: none;
+      cursor: pointer;
+   }
+   .dropdown{
+      position: absolute;
+      right: 4rem;
+      top: 7rem;
+      width: 25rem;
+      max-height: -0;
+      padding: rem;
+      line-height:4rem;
+   /*   font-size: 2.4rem;*/
+   /*   background-color: #989aa291;*/
+      backdrop-filter: blur(20px);
+     
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      border-radius: 3rem;
+      opacity: 0.6;
+      overflow: hidden;
+      display: none;
+      transition: height 0.2s cubic-bezier(0.175,0.885,0.32, 1.275);
+   }
+   
+   .dropdown a{
+      color: var(--maincolor);
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.4rem;
+      margin-bottom: 1.4rem;
+      display: flex;
+      text-align: center;
+   /*   font-weight: 600;*/
+   }
+   .dropdown select{
+      font-size: 2.4rem;
+   }
+   .dropdown a:hover, .dropdown select:hover{
+      color: white;
+   }
+   .open{
+     max-height: 380px; border: 1px solid black;
+   }
+    
+       /*---------------footer section--------------
+     ---------------------------------------- */  
+     .footer{
+      width: 100%;
+      height: 20vh;
+      background-color: black;
+      padding: 2rem 0;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+     }
+     
+     .arrow{
+    color: white;
+    width: 5rem;
+    height: 5rem;
+   /* float: left;*/
+    /*position:sticky;
+    bottom: 1rem;*/
+       transition: 0.6s all;
+   /* margin: 10rem 2rem 0 2rem;*/
+   animation-name: example;
+     animation-duration: 4s;
+       animation-iteration-count: infinite;
+   /*    display: inline-block;*/
+     }
+     @keyframes example {
+     0%   {color: white;}
+     25%  {color: blue;}
+     50%  {color: pink;}
+     75%  {color: yellow;}
+     100% {color: red;}
+   }
+   .linkedin,.github,.youtube{
+      color: white;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+   }
+   .content{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+   /*   margin-top: 20rem;*/
+   }
+   .footer div p{
+      color: white;
+      font-size: 2rem;
+     text-align: center;margin: 2rem 2rem ;
+   
+   }
+   .arrow-box{
+      width: 6rem;
+      height: 6rem;
+   }
+   
+/*----------------------------------
+----------contact section-------------*/
+
+.section-hero{
+   margin: 5rem;
+   border-radius: 2rem;
+}
+.container{
+   max-width: 110rem;
+   margin: 0 auto ;
+}
+.section-contact{
+   padding: 5rem 7rem;
+}
+.section-contact div input ,#textarea {
+   padding: 1.3rem 2rem;
+    border: 0.1rem solid grey;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family:  var(--poppines);
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.button{
+   max-width: 20rem;
+   background-color: var(--maincolor);
+   color: white;
+   border: none;transition: all 0.3s linear;
+/*   text-align: center;*/
+   justify-content: center;
+}
+
+.button:hover{
+   box-shadow: 4px 4px 4px 4px #7a7a7a;;
+}
+.back{
+   width: 3rem;
+   height: 3rem;
+   color: black;
+}
+
+
+   
+   
+   
+   /*----------------------------------
+   ----------footer section (new page)-------------*/
+   
+   .footer2{
+      padding: 9rem 5rem;
+      font-family: var(--poppines);
+   }
+   
+   .section-footer{
+      background: black;
+      transition: all 0.7s linear;
+   
+   }
+   
+   .section-footer h3{
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      text-transform: capitalize;
+   }
+   .f-about p{
+      color: grey;
+      font-size: 1.5rem;
+   }
+   .f-links ul,.f-services ul,.f-address address{
+      display: flex;
+       flex-direction: column;
+       gap: 1.8rem;
+       justify-content: center;
+   }
+   .f-links li, .f-links a ,.f-services li, .f-services a{
+      font-size: 1.5rem;
+      color: grey;
+      text-transform: capitalize;
+   
+   }
+   .f-links span,.f-services span,.f-address span{
+      margin-right: 1rem;
+   }
+   .f-address p,.f-address p a{
+      font-style: normal;
+      color: grey;
+      font-size: 1.5rem;
+   }
+   .f-social-icons .f-icons{
+      width: 4rem;
+      height: 4rem;
+      background-color: #4b4b4b;
+      display: inline-block;
+      padding: 1.4rem 1.8rem;
+      position: relative;
+      color: white;
+      animation: water-wave 3s linear infinite ;
+      cursor: pointer;
+   }
+   
+      .f-social-icons{
+         display: flex;
+   justify-content: center;
+      align-items: center;
+      gap: 1.5rem;    margin-top: 2rem;
+      }
+      .f-credits p{
+         text-align: center;
+         color: grey;
+         font-size: 1.5rem;
+         margin-top: 1.5rem;
+      }
+      .footer2 a:hover, .footer2 a:active{
+         color: white;
+      }
+      .scrollTop-style{
+         position: fixed;
+         right: 2%;
+         bottom: 5%;
+         z-index: 1;
+         transition: all 0.3s linear;
+      }
+      .scroll-top{
+         width: 4rem;
+         height: 4rem;
+         background: var(--gradient);
+         display: inline-block;
+         padding: 1.4rem 1.8rem;
+         color: white;
+      animation: water-wave 3s linear infinite ;
+      cursor: pointer;
+      transition: all 0.3s linear;
+      }
+      .uper{
+         float: right;
+         position: fixed;
+         bottom: 3rem;
+       right: 2rem;
+         
+       
+      }
+      .ionicon, svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  color: aliceblue;  
+  }
+    
+  .icon-button {
+   background-color: #270736;
+   color: #ffffff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+ 
+   transition: background-color 0.3s ease;
+ }
+
+ .icon-button:hover {
+   background-color: #040d15; /* darker shade of blue on hover */
+ }
+
+ .icon-button ion-icon {
+   margin-right: 5px; /* add some spacing between the icon and text */
+ }
+ .dialog {
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: white;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ }  
+ .shoes-img {
+       
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    .shoes-img:hover {
+        transform: scale(1.1); /* Increase the size of the image on hover */
+    }
+
+    .dot-img {
+      
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    .dot-img:hover {
+        transform: scale(1.2); /* Increase the size of the dot image on hover */
+    }
+
+    .like-btn {
+       
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    .like-btn:hover {
+        transform: scale(1.2); /* Increase the size of the like button on hover */
+    }
+    </style>
+  <body>
+    <div class="me">
+      <h1>Foot N Fit Company</h1>
+      
+       </div>
+      
+    
+      <section class="section">
+             <header class="header">
+                      <nav class="navbar"> 
+                          <div class="logo">
+                             <img src="logo...jpg" >
+                           </div>
+                           <div class="links">
+                            
+                          
+              
+                         
+                            <a href="index.html" > Home</a>                      
+                            <a href="type.html" target="_blank" >About</a>
+                           <a href="women.html" target="_blank" >Women</a>                        
+                           <a href="men.html" target="_blank" >Men</a>                     
+                           <a href="kids.html" target="_blank" >Kids</a>
+                           
+                            <a href="contact.html" target="_blank">Contact</a>
+                            
+                                                 
+                              
+                            </div> 
+                            <div class="mecontainer">
+        
+                              <ion-icon name="search-outline" id="searchButton"></ion-icon>&nbsp;&nbsp;&nbsp;
+                       
+                        <ion-icon name="person"></ion-icon>&nbsp;&nbsp;&nbsp;
+                        <ion-icon name="cart-outline" id="addToCartIcon"></ion-icon>
+                            </div>
+                                                      <!-- Search dialog box -->
+                                                      <div class="dialog" id="searchDialog">
+                                                        <h2>Search</h2>
+                                                        <input type="text" id="searchInput" placeholder="Enter your search query">
+                                                        <button id="searchDialogClose">Close</button>
+                                                      </div>
+                      </nav>
+                      </header>
+                      <div class="dialog" id="addToCartDialog">
+                        <h2>Item Added to Cart!</h2>
+                        <!-- You can customize the content of the dialog as per your requirement -->
+                        <button id="closeDialogButton">Close</button>
+                      </div>
+                      <script>
+                        // Get references to search button and dialog box elements
+                        const searchButton = document.getElementById('searchButton');
+                        const searchDialog = document.getElementById('searchDialog');
+                        const searchDialogClose = document.getElementById('searchDialogClose');
+                      
+                        // Show the search dialog when the search button is clicked
+                        searchButton.addEventListener('click', function() {
+                          searchDialog.style.display = 'block';
+                        });
+                      
+                        // Close the search dialog when the close button is clicked
+                        searchDialogClose.addEventListener('click', function() {
+                          searchDialog.style.display = 'none';
+                        });
+                      
+                        // Optionally, you can also close the search dialog when the user clicks outside of it
+                        window.addEventListener('click', function(event) {
+                          if (event.target === searchDialog) {
+                            searchDialog.style.display = 'none';
+                          }
+                        });
+                      
+                        // Prevent clicks inside the dialog from closing the dialog
+                        searchDialog.addEventListener('click', function(event) {
+                          event.stopPropagation();
+                        });
+                      </script>
+                      <script>
+                        // Get references to add to cart icon and dialog box elements
+                        const addToCartIcon = document.getElementById('addToCartIcon');
+                        const addToCartDialog = document.getElementById('addToCartDialog');
+                        const closeDialogButton = document.getElementById('closeDialogButton');
+                      
+                        // Show the add to cart dialog when the add to cart icon is clicked
+                        addToCartIcon.addEventListener('click', function() {
+                          addToCartDialog.style.display = 'block';
+                        });
+                      
+                        // Close the add to cart dialog when the close button is clicked
+                        closeDialogButton.addEventListener('click', function() {
+                          addToCartDialog.style.display = 'none';
+                        });
+                      
+                        // Optionally, you can also close the add to cart dialog when the user clicks outside of it
+                        window.addEventListener('click', function(event) {
+                          if (event.target === addToCartDialog) {
+                            addToCartDialog.style.display = 'none';
+                          }
+                        });
+                      
+                        // Prevent clicks inside the dialog from closing the dialog
+                        addToCartDialog.addEventListener('click', function(event) {
+                          event.stopPropagation();
+                        });
+                      </script>
+
+  <img src="d3.jpg" class="puma-img-1"/>
+
+
+
+<div class="containe">
+<div class="child-container">
+
+    <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+     <img src="bookmark.png" onclick="likeOn1()" id="on1" class="like-btn"/>
+    <img src="heels8.jpg" id="js-img-1" class="shoes-img"/>
+    <div class="dot-container">
+      <img src="dotno-1.png" onclick="cardCangeimg1()" class="dot-img" />
+      <img src="dotno-1.png" onclick="cardCangeimg2()" class="dot-img" />
+      <img src="dotno-1.png" onclick="cardCangeimg3()" class="dot-img" />
+    </div>
+    <h1 class="title">Bridal heels </h1>
+    <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+     <h1 class="rs">Rs.6000</h1>
+     <div class="star-container">
+        <img src="star (1).png" class="star"/>
+        <img src="star (1).png" class="star"/>
+        <img src="star (1).png" class="star"/>
+        <img src="star (1).png" class="star"/>
+     </div>
+   
+
+    </div>
+ 
+
+
+    <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+      <img src="bookmark.png" onclick="likeOn2()" id="on2" class="like-btn"/>
+     <img src="red1.jpg" id="js-img-2" class="shoes-img"/>
+     <div class="dot-container">
+       <img src="dotno-1.png" onclick="cardCangeimg4()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg5()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg6()" class="dot-img" />
+     </div>
+     <h1 class="title">Pencil heels </h1>
+     <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+      <h1 class="rs">Rs.3,259</h1>
+      <div class="star-container">
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+      </div>
+    
+ 
+     </div>
+  
+ 
+
+     <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+      <img src="bookmark.png" onclick="likeOn3()" id="on3" class="like-btn"/>
+     <img src="heels7.jpg" id="js-img-3" class="shoes-img"/>
+     <div class="dot-container">
+       <img src="dotno-1.png" onclick="cardCangeimg7()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg8()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg9()" class="dot-img" />
+     </div>
+     <h1 class="title">White pearl heels</h1>
+     <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+      <h1 class="rs">Rs.2000</h1>
+      <div class="star-container">
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+      </div>
+    
+ 
+     </div>
+  
+     <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+      <img src="bookmark.png" onclick="likeOn4()" id="on4" class="like-btn"/>
+     <img src="f1.avif" id="js-img-4" class="shoes-img"/>
+     <div class="dot-container">
+       <img src="dotno-1.png" onclick="cardCangeimg10()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg11()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg12()" class="dot-img" />
+     </div>
+     <h1 class="title">High Heels For Women-StalkBae</h1>
+     <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+      <h1 class="rs">  $26.58</h1>
+      <div class="star-container">
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+      </div>
+    
+ 
+     </div>
+  
+     <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+      <img src="bookmark.png" onclick="likeOn5()" id="on5" class="like-btn"/>
+     <img src="heels5.jpg" id="js-img-5" class="shoes-img"/>
+     <div class="dot-container">
+       <img src="dotno-1.png" onclick="cardCangeimg13()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg14()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg15()" class="dot-img" />
+     </div>
+     <h1 class="title">Glass Heel Shoes Black</h1>
+     <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+      <h1 class="rs"> Rs.2500</h1>
+      <div class="star-container">
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+      </div>
+    
+ 
+     </div>
+  
+     <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+      <img src="bookmark.png" onclick="likeOn6()" id="on6" class="like-btn"/>
+     <img src="heels10.avif" id="js-img-6" class="shoes-img"/>
+     <div class="dot-container">
+       <img src="dotno-1.png" onclick="cardCangeimg16()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg17()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg18()" class="dot-img" />
+     </div>
+     <h1 class="title">Strip like heels</h1>
+     <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+      <h1 class="rs">Rs.1500</h1>
+      <div class="star-container">
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+      </div>
+    
+ 
+     </div>
+  
+     <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+      <img src="bookmark.png" onclick="likeOn7()" id="on7" class="like-btn"/>
+     <img src="w1.avif" id="js-img-7" class="shoes-img"/>
+     <div class="dot-container">
+       <img src="dotno-1.png" onclick="cardCangeimg19()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg20()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg21()" class="dot-img" />
+     </div>
+     <h1 class="title">Flat heel sandal</h1>
+     <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+      <h1 class="rs">Rs.3000</h1>
+      <div class="star-container">
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+      </div>
+    
+ 
+     </div>
+  
+     <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+      <img src="bookmark.png" onclick="likeOn8()" id="on8" class="like-btn"/>
+     <img src="b1.webp" id="js-img-8" class="shoes-img"/>
+     <div class="dot-container">
+       <img src="dotno-1.png" onclick="cardCangeimg22()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg23()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg24()" class="dot-img" />
+     </div>
+     <h1 class="title">Bridal heels</h1>
+     <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+      <h1 class="rs">Rs.5000</h1>
+      <div class="star-container">
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+      </div>
+    
+ 
+     </div>
+  
+     <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+      <img src="bookmark.png" onclick="likeOn9()" id="on9" class="like-btn"/>
+     <img src="s2.jpg" id="js-img-9" class="shoes-img"/>
+     <div class="dot-container">
+       <img src="dotno-1.png" onclick="cardCangeimg25()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg26()" class="dot-img" />
+       <img src="dotno-1.png" onclick="cardCangeimg27()" class="dot-img" />
+     </div>
+     <h1 class="title">Girls Color Block Trendy Design Sneaker Shoes</h1>
+     <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+      <h1 class="rs">$53.99</h1>
+      <div class="star-container">
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+         <img src="star (1).png" class="star"/>
+      </div>
+    
+ 
+     </div>
+
+
+   
+  
+ 
+
+  
+ 
+   
+</div>
+</div>
+
+
+<img src="puma.jpg" class="puma-img"/>
+
+  
+<div class="containe">
+  <div class="child-container">
+  
+      <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+       <img src="bookmark.png" onclick="likeOn10()" id="on10" class="like-btn"/>
+      <img src="s5.webp" id="js-img-10" class="shoes-img"/>
+      <div class="dot-container">
+        <img src="dotno-1.png" onclick="cardCangeimg28()" class="dot-img" />
+        <img src="dotno-1.png" onclick="cardCangeimg29()" class="dot-img" />
+        <img src="dotno-1.png" onclick="cardCangeimg30()" class="dot-img" />
+      </div>
+      <h1 class="title">Foxxy Moon White Long Trend Casual Sneaker Shoes For Women White</h1>
+      <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+       <h1 class="rs">Rs.399</h1>
+       <div class="star-container">
+          <img src="star (1).png" class="star"/>
+          <img src="star (1).png" class="star"/>
+          <img src="star (1).png" class="star"/>
+          <img src="star (1).png" class="star"/>
+       </div>
+     
+  
+      </div>
+   
+  
+  
+      <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+        <img src="bookmark.png" onclick="likeOn11()" id="on11" class="like-btn"/>
+       <img src="s3.jpg" id="js-img-11" class="shoes-img"/>
+       <div class="dot-container">
+         <img src="dotno-1.png" onclick="cardCangeimg31()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg32()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg33()" class="dot-img" />
+       </div>
+       <h1 class="title"> Sneaker Shoes Air-Force Sports Shoes </h1>
+       <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+        <h1 class="rs">Rs.700</h1>
+        <div class="star-container">
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+        </div>
+      
+   
+       </div>
+    
+   
+  
+       <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+        <img src="bookmark.png" onclick="likeOn12()" id="on12" class="like-btn"/>
+       <img src="s4.webp" id="js-img-12" class="shoes-img"/>
+       <div class="dot-container">
+         <img src="dotno-1.png" onclick="cardCangeimg34()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg35()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg36()" class="dot-img" />
+       </div>
+       <h1 class="title">Black stylish sneakers</h1>
+       <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+        <h1 class="rs">Rs.2500</h1>
+        <div class="star-container">
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+        </div>
+      
+   
+       </div>
+    
+       <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+        <img src="bookmark.png" onclick="likeOn13()" id="on13" class="like-btn"/>
+       <img src="puma3.jpg" id="js-img-13" class="shoes-img"/>
+       <div class="dot-container">
+         <img src="dotno-1.png" onclick="cardCangeimg37()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg38()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg39()" class="dot-img" />
+       </div>
+       <h1 class="title">Puma Women's Mia WNS V2 Flip-Flop</h1>
+       <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+        <h1 class="rs"> Rs.460</h1>
+        <div class="star-container">
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+        </div>
+      
+   
+       </div>
+    
+       <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+        <img src="bookmark.png" onclick="likeOn14()" id="on14" class="like-btn"/>
+       <img src="pp1.jpg" id="js-img-14" class="shoes-img"/>
+       <div class="dot-container">
+         <img src="dotno-1.png" onclick="cardCangeimg40()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg41()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg42()" class="dot-img" />
+       </div>
+       <h1 class="title">Puma Women's Alice WNS Slipper</h1>
+       <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+        <h1 class="rs">Rs.779</h1>
+        <div class="star-container">
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+        </div>
+      
+   
+       </div>
+    
+       <div class="card-container shadow-sm  bg-body-tertiary rounded ">
+        <img src="bookmark.png" onclick="likeOn15()" id="on15" class="like-btn"/>
+       <img src="pp4.jpg" id="js-img-15" class="shoes-img"/>
+       <div class="dot-container">
+         <img src="dotno-1.png" onclick="cardCangeimg43()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg44()" class="dot-img" />
+         <img src="dotno-1.png" onclick="cardCangeimg45()" class="dot-img" />
+       </div>
+       <h1 class="title">Puma Women's Silvia V2 WNS Slide Sandal</h1>
+       <h1 class="title-1"> Extra 5% Off On Prepaid Order</h1>
+        <h1 class="rs">Rs.999</h1>
+        <div class="star-container">
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+           <img src="star (1).png" class="star"/>
+        </div>
+      
+   
+       </div>
+    
+   
+       </div>
+    
+   
+  
+    
+   
+     
+  </div>
+  </div>
+  
+  <footer class="footer2 section-footer  ">
+    <div class=" grid grid-four wrap justify-content">
+         <div class="f-about  ">
+          <h3>about</h3>
+          <p>The world's largest athletic apparel company, Nike is best known for its footwear, apparel, and equipment. Founded in 1964 as Blue Ribbon Sports, the company became Nike in 1971 after the Greek goddess of victory. One of the most valuable brands among sport businesses, Nike employs over 76,000 people worldwide.</p>
+         </div> 
+            <div class="f-links">
+              <h3>Links</h3>
+              <ul>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="index.html">home</a></li>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="type.html">about</a></li>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="women.html">women</a></li>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="men.html">men</a></li>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="kids.html">kids</a></li>
+               <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="contact.html">contact</a></li>
+              </ul>
+            </div>
+            <div class="f-services ">
+              <h3>services</h3>
+              <ul>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">designing</a></li>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">marketing</a></li>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">athletic footwear</a></li>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">apparel</a></li>
+                <li><span><ion-icon name="arrow-forward-outline" role="img" class="md hydrated"></ion-icon></span><a href="#">services for sports </a></li>
+              </ul>
+            </div>
+            <div class="f-address">
+              <h3> Have a Question?</h3>
+              <address>
+                <div>
+                  <p>
+                     <span><ion-icon name="location-outline" role="img" class="md hydrated"></ion-icon>Amritsar, Punjab.</span> 
+                  </p>
+                </div>
+                <div>
+                  <p>
+                     <span><ion-icon name="call-outline" role="img" class="md hydrated"></ion-icon><a href="tel:+917710620140">+91 7710620140</a></span>  
+                  </p>
+                </div>
+                <div>
+                  <p>
+                     <span><ion-icon name="mail-outline" role="img" class="md hydrated"></ion-icon></span><a href="gmailto:yadavn@gmail.com">yadavn@gmail.com</a> 
+                  </p>
+                </div>
+              </address>
+             </div>
+  </div>
+ 
+ 
+            <div class="f-social-icons"> 
+      <a href="https://www.linkedin.com/in/gurleen-kaur-6658ba24b/" target="_blank"><ion-icon  class="linkedin"name="logo-linkedin" role="img"></ion-icon></a>
+ 
+      <a href="https://github.com/kaurguru" target="_blank"><ion-icon class="github" name="logo-github" role="img"></ion-icon></a>
+ 
+      <a href="https://www.youtube.com/@coding_with_ashna/videos" target="_blank"><ion-icon class="youtube" name="logo-youtube" role="img"></ion-icon></a>
+          </div>
+ 
+          <div class="f-credits">
+            <p>Copyright @2023 All rights reserved.</p>
+            
+          </div>
+          
+ 
+ </footer>
+ <script>
+    let dropDown = document.getElementById("dropdown2");
+  function togglemenu(){
+    dropDown.classList.toggle("open2");
+  }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  
+   <script>   
+function likeOn1()
+{
+    const element = document.getElementById("on1");
+  element.src= "bookmark (1).png";
+}
+
+        
+function cardCangeimg1()
+{
+    const element = document.getElementById("js-img-1");
+  element.src= "h4.jpg";
+}
+         
+function cardCangeimg2()
+{
+    const element = document.getElementById("js-img-1");
+  element.src= "h5.webp";
+}
+         
+function cardCangeimg3()
+{
+    const element = document.getElementById("js-img-1");
+  element.src= "h6.jpg";
+}
+  
+     
+function likeOn2()
+{
+    const element = document.getElementById("on2");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg4()
+{
+    const element = document.getElementById("js-img-2");
+  element.src= "red2.jpg";
+}
+         
+function cardCangeimg5()
+{
+    const element = document.getElementById("js-img-2");
+  element.src= "red3.jpg";
+}
+         
+function cardCangeimg6()
+{
+    const element = document.getElementById("js-img-2");
+  element.src= "red4.jpg";
+}
+   
+   
+     
+function likeOn3()
+{
+    const element = document.getElementById("on3");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg7()
+{
+    const element = document.getElementById("js-img-3");
+  element.src= "h17.jpg";
+}
+         
+function cardCangeimg8()
+{
+    const element = document.getElementById("js-img-3");
+  element.src= "h18.jpg";
+}
+         
+function cardCangeimg9()
+{
+    const element = document.getElementById("js-img-3");
+  element.src= "h20.jpg";
+}
+   
+    
+function likeOn4()
+{
+    const element = document.getElementById("on4");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg10()
+{
+    const element = document.getElementById("js-img-4");
+  element.src= "f1.avif";
+}
+         
+function cardCangeimg11()
+{
+    const element = document.getElementById("js-img-4");
+  element.src= "f2.avif";
+}
+         
+function cardCangeimg12()
+{
+    const element = document.getElementById("js-img-4");
+  element.src= "f3.avif";
+}
+   
+   
+   
+function likeOn5()
+{
+    const element = document.getElementById("on5");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg13()
+{
+    const element = document.getElementById("js-img-5");
+  element.src= "h5...jpg";
+}
+         
+function cardCangeimg14()
+{
+    const element = document.getElementById("js-img-5");
+  element.src= "h6...jpg";
+}
+         
+function cardCangeimg15()
+{
+    const element = document.getElementById("js-img-5");
+  element.src= "h7...jpg";
+}
+function likeOn6()
+{
+    const element = document.getElementById("on6");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg16()
+{
+    const element = document.getElementById("js-img-6");
+  element.src= "h12.jpg";
+}
+         
+function cardCangeimg17()
+{
+    const element = document.getElementById("js-img-6");
+  element.src= "h13.jpg";
+}
+         
+function cardCangeimg18()
+{
+    const element = document.getElementById("js-img-6");
+  element.src= "h14.jpg";
+}
+   
+ 
+function likeOn7()
+{
+    const element = document.getElementById("on7");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg19()
+{
+    const element = document.getElementById("js-img-7");
+  element.src= "w1.avif";
+}
+         
+function cardCangeimg20()
+{
+    const element = document.getElementById("js-img-7");
+  element.src= "w2.avif";
+}
+         
+function cardCangeimg21()
+{
+    const element = document.getElementById("js-img-7");
+  element.src= "w3.avif";
+}
+   
+  
+function likeOn8()
+{
+    const element = document.getElementById("on8");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg22()
+{
+    const element = document.getElementById("js-img-8");
+  element.src= "b2.jpg";
+}
+         
+function cardCangeimg23()
+{
+    const element = document.getElementById("js-img-8");
+  element.src= "b3.png";
+}
+         
+function cardCangeimg24()
+{
+    const element = document.getElementById("js-img-8");
+  element.src= "b4.jpg";
+}
+   
+   
+function likeOn9()
+{
+    const element = document.getElementById("on9");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg25()
+{
+    const element = document.getElementById("js-img-9");
+  element.src= "black1.jpg";
+}
+         
+function cardCangeimg26()
+{
+    const element = document.getElementById("js-img-9");
+  element.src= "black2.jpg";
+}
+         
+function cardCangeimg27()
+{
+    const element = document.getElementById("js-img-9");
+  element.src= "black.jpg";
+}
+    
+function likeOn10()
+{
+    const element = document.getElementById("on10");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg28()
+{
+    const element = document.getElementById("js-img-10");
+  element.src= "s5...webp";
+}
+         
+function cardCangeimg29()
+{
+    const element = document.getElementById("js-img-10");
+  element.src= "s6...webp";
+}
+         
+function cardCangeimg30()
+{
+    const element = document.getElementById("js-img-10");
+  element.src= "s5.webp";
+}
+   
+ 
+function likeOn11()
+{
+    const element = document.getElementById("on11");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg31()
+{
+    const element = document.getElementById("js-img-11");
+  element.src= "s3...webp";
+}
+         
+function cardCangeimg32()
+{
+    const element = document.getElementById("js-img-11");
+  element.src= "s4...jpg";
+}
+         
+function cardCangeimg33()
+{
+    const element = document.getElementById("js-img-11");
+  element.src= "sh..webp";
+}
+   
+ 
+function likeOn12()
+{
+    const element = document.getElementById("on12");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg34()
+{
+    const element = document.getElementById("js-img-12");
+  element.src= "bl.webp";
+}
+         
+function cardCangeimg35()
+{
+    const element = document.getElementById("js-img-12");
+  element.src= "bl1.jpeg";
+}
+         
+function cardCangeimg36()
+{
+    const element = document.getElementById("js-img-12");
+  element.src= "s4.webp";
+}
+   
+
+function likeOn13()
+{
+    const element = document.getElementById("on13");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg37()
+{
+    const element = document.getElementById("js-img-13");
+  element.src= "puma1.jpg";
+}
+         
+function cardCangeimg38()
+{
+    const element = document.getElementById("js-img-13");
+  element.src= "puma2.jpg";
+}
+         
+function cardCangeimg39()
+{
+    const element = document.getElementById("js-img-13");
+  element.src= "puma4.jpg";
+}
+   
+
+function likeOn14()
+{
+    const element = document.getElementById("on14");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg40()
+{
+    const element = document.getElementById("js-img-14");
+  element.src= "pp.jpg";
+}
+         
+function cardCangeimg41()
+{
+    const element = document.getElementById("js-img-14");
+  element.src= "pp2.jpg";
+}
+         
+function cardCangeimg42()
+{
+    const element = document.getElementById("js-img-14");
+  element.src= "pp3.jpg";
+}
+
+
+
+function likeOn15()
+{
+    const element = document.getElementById("on15");
+  element.src= "bookmark (1).png";
+}
+
+       
+function cardCangeimg43()
+{
+    const element = document.getElementById("js-img-15");
+  element.src= "pp4.jpg";
+}
+         
+function cardCangeimg44()
+{
+    const element = document.getElementById("js-img-15");
+  element.src= "pp5.jpg";
+}
+         
+function cardCangeimg45()
+{
+    const element = document.getElementById("js-img-15");
+  element.src= "pp6.jpg";
+}
+</script>
+   
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+  
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

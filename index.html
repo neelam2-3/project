@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script src="https:kit.fontawesome.coma076d05599.js" crossorigin="ananymous"></script>
+    <!-- google fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&family=Caveat&family=Kavoon&family=Lobster&family=Montserrat:wght@700&family=Mynerve&family=Orbitron&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Roboto+Slab:wght@200&family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- swap fonts -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <!-- <script defer src="landing.js"></script> -->
+ 
+    <title>مlanding page</title>
+  </head>
+  
+  <body>
+    
+    <div class="me">
+     
+      <h1>Foot N Fit Company</h1>
+
+       </div>
+       
+ 
+  <section class="section">
+         <header class="header">
+                  <nav class="navbar"> 
+                    <div class="logo">
+                      <img src="logo...jpg" >
+                    </div>
+                      
+                      
+                       
+                       <div class="links">
+                           
+                         
+                        <a href="index.html" > Home</a>                      
+                         <a href="type.html" target="_blank" >About</a>
+                        <a href="women.html" target="_blank" >Women</a>                        
+                        <a href="men.html" target="_blank" >Men</a>                     
+                        <a href="kids.html" target="_blank" >Kids</a>
+                        
+                         <a href="contact.html" target="_blank">Contact</a>
+                         
+                                              
+                           
+                         </div> 
+                        
+                         <div class="mecontainer">
+                          
+                        
+                         
+                          <ion-icon name="cart-outline" id="addToCartIcon"></ion-icon>&nbsp;&nbsp;&nbsp;
+                          <ion-icon name="person" id="profileIcon"></ion-icon>&nbsp;&nbsp;&nbsp;
+                          <ion-icon name="search-outline" id="searchButton"></ion-icon>
+                        </div>  
+                          <!-- Dialog box -->
+                          <div class="dialog2" id="profileDialog">
+                              <ul class="dialog-options">
+                                  <li><a href="#">Sign Up</a></li>
+                                  <li class="dropdown1">
+                                    <a href="#">My Orders <ion-icon name="caret-down"></ion-icon></a>
+                                    <ul class="dropdown-content1">
+                                        <li><a href="#" id="myOrdersButton">Enter Mobile Number</a></li>
+                                    </ul>
+                                </li>
+                              </div>
+                                <!-- Dialog box for My Orders -->
+                                <div class="dialog" id="myOrdersDialog">
+                                  
+                                    <h2>Enter Your Mobile Number</h2>
+                                    <form id="mobileNumberForm">
+                                      
+                                      <div class="phone-number-wrapper">
+                                        <span>+91</span> <!-- Static text for "91" -->
+                                        <input type="tel" id="mobileNumberInput" placeholder="Enter your mobile number" required>
+                                    </div>
+                                        <button type="submit">Continue</button>
+                                    </form>
+                                    <button id="backButton">Back</button> <!-- Back button -->
+                                </div>
+                        
+                          <!-- Search dialog box -->
+                          <div class="dialog" id="searchDialog">
+                            <h2>Search</h2>
+                            <input type="text" id="searchInput" placeholder="Enter your search query">
+                            <button id="searchDialogClose">Close</button>
+                          </div>
+                          <div class="dialog" id="addToCartDialog">
+                            <h2>Item Added to Cart!</h2>
+                            <!-- You can customize the content of the dialog as per your requirement -->
+                            <button id="closeDialogButton">Close</button>
+                          </div>
+                          <script>
+                            // Get references to search button and dialog box elements
+                            const searchButton = document.getElementById('searchButton');
+                            const searchDialog = document.getElementById('searchDialog');
+                            const searchDialogClose = document.getElementById('searchDialogClose');
+                          
+                            // Show the search dialog when the search button is clicked
+                            searchButton.addEventListener('click', function() {
+                              searchDialog.style.display = 'block';
+                            });
+                          
+                            // Close the search dialog when the close button is clicked
+                            searchDialogClose.addEventListener('click', function() {
+                              searchDialog.style.display = 'none';
+                            });
+                          
+                            // Optionally, you can also close the search dialog when the user clicks outside of it
+                            window.addEventListener('click', function(event) {
+                              if (event.target === searchDialog) {
+                                searchDialog.style.display = 'none';
+                              }
+                            });
+                          
+                            // Prevent clicks inside the dialog from closing the dialog
+                            searchDialog.addEventListener('click', function(event) {
+                              event.stopPropagation();
+                            });
+                          </script>
+                          <script>
+                            // Get references to add to cart icon and dialog box elements
+                            const addToCartIcon = document.getElementById('addToCartIcon');
+                            const addToCartDialog = document.getElementById('addToCartDialog');
+                            const closeDialogButton = document.getElementById('closeDialogButton');
+                          
+                            // Show the add to cart dialog when the add to cart icon is clicked
+                            addToCartIcon.addEventListener('click', function() {
+                              addToCartDialog.style.display = 'block';
+                            });
+                          
+                            // Close the add to cart dialog when the close button is clicked
+                            closeDialogButton.addEventListener('click', function() {
+                              addToCartDialog.style.display = 'none';
+                            });
+                          
+                            // Optionally, you can also close the add to cart dialog when the user clicks outside of it
+                            window.addEventListener('click', function(event) {
+                              if (event.target === addToCartDialog) {
+                                addToCartDialog.style.display = 'none';
+                              }
+                            });
+                          
+                            // Prevent clicks inside the dialog from closing the dialog
+                            addToCartDialog.addEventListener('click', function(event) {
+                              event.stopPropagation();
+                            });
+                          </script>
+                          <!-- Profile icon container -->
+                          <script>
+           
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // Get references to profile icon and dialog box elements
+                                const profileIcon = document.getElementById('profileIcon');
+                                const profileDialog = document.getElementById('profileDialog');
+                        
+                                // Show the profile dialog when the profile icon is clicked
+                                profileIcon.addEventListener('click', function(event) {
+                                    profileDialog.style.display = 'block';
+                                    event.stopPropagation(); // Prevent the event from bubbling up
+                                });
+                        
+                                // Close the profile dialog when the user clicks outside of it
+                                window.addEventListener('click', function(event) {
+                                    if (!profileDialog.contains(event.target) && event.target !== profileIcon) {
+                                        profileDialog.style.display = 'none';
+                                    }
+                                });
+                            });
+                        
+                                 </script>
+                                 <script>
+                                  // Get references to elements
+const profileIcon = document.getElementById('profileIcon');
+const profileDialog = document.getElementById('profileDialog');
+const myOrdersButton = document.querySelector('.my-orders-button');
+const myOrdersDialog = document.getElementById('myOrdersDialog');
+
+// Show the profile dialog when the profile icon is clicked
+profileIcon.addEventListener('click', function() {
+    profileDialog.style.display = 'block';
+});
+
+// Show the My Orders dialog when the My Orders button is clicked
+myOrdersButton.addEventListener('click', function(event) {
+    myOrdersDialog.style.display = 'block';
+    event.stopPropagation(); // Prevent the event from bubbling up
+});
+
+// Close the dialogs when the user clicks outside of them
+window.addEventListener('click', function(event) {
+    if (!profileDialog.contains(event.target) && event.target !== profileIcon) {
+        profileDialog.style.display = 'none';
+    }
+    if (!myOrdersDialog.contains(event.target) && event.target !== myOrdersButton) {
+        myOrdersDialog.style.display = 'none';
+    }
+});
+
+                                 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const myOrdersButton = document.getElementById('myOrdersButton');
+    const myOrdersDialog = document.getElementById('myOrdersDialog');
+    const mobileNumberForm = document.getElementById('mobileNumberForm');
+
+    myOrdersButton.addEventListener('click', function(event) {
+        myOrdersDialog.style.display = 'block';
+        event.preventDefault(); // Prevent default anchor behavior
+    });
+
+    mobileNumberForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        const mobileNumber = document.getElementById('mobileNumberInput').value;
+        alert('Thank you for submitting your mobile number: ' + mobileNumber);
+        myOrdersDialog.style.display = 'none'; // Hide the dialog after submission
+    });
+
+    window.addEventListener('click', function(event) {
+        if (!myOrdersDialog.contains(event.target) && event.target !== myOrdersButton) {
+            myOrdersDialog.style.display = 'none';
+        }
+    });
+});
+
+</script>
+          <main class="main">  
+              <div class="content-center container">
+               <h1> nike Air Max</h1>
+               <h2> It's Time to Shine with Campus Collection</h2>
+               <img src="5star.png" class="star"><br>
+              
+               <a href="type.html" target="_blank" class="btn">let's explore &#8594;</a>
+               
+               
+             </div>
+              
+          </main>
+         
+ </section>
+
+
+
+  <!-- /*-------------------------------
+             sale section
+      ------------------------------- */   -->
+
+<section class="section-hero">
+  <div  class="sale-sec  grid grid-two">
+        
+        <div class="box1">
+              <div>
+                    <div class="span">payday </div>         
+                  <h1>sale now</h1>
+                  <h3>spend minimum 2000-RS and get 30% off</h3>
+                  <h4>vouncher code for your next purchase</h4>
+              </div><br>
+              <div>
+                    <h5>october 1  to  october 31</h5>
+                   <h5>terms and conditions apply</h5>
+
+              </div>
+               <div class="sale-btn" >
+                   <a href="type.html" class="btn " target="_blank">shop now</a>
+                   <button id="loginButton">Login</button>
+                   <div id="loginDialog" class="dialog1">
+                    <span class="close" onclick="closeDialog()">&times;</span>
+                    <h2>Login</h2>
+                    <form action="login1.php" method="POST">
+                      <label for="username" class="label-large">Username:</label>
+                      <input type="text" id="username" name="username">
+                      <label for="email" class="label-large">Email:</label>
+                      <input type="email" id="email" name="email">
+                      <label for="text" class="label-large">Password:</label>
+                      <input type="text" id="password" name="password">
+                      <button type="submit">Submit</button>
+                    </form>
+                    <a href="#" onclick="goBack()">Back</a>
+                  </div>
+
+              </div>
+        </div> 
+        <script>
+          document.getElementById('loginButton').addEventListener('click', function() {
+           document.getElementById('loginDialog').style.display = 'block';
+         });
+         
+         function closeDialog() {
+           document.getElementById('loginDialog').style.display = 'none';
+         }
+         function goBack() {
+  document.getElementById('loginDialog').style.display = 'none';
+}
+
+         </script>
+  
+        <div class="box2">
+              <img src="man.png" alt="manimage" class="man "><img src="level.png" class="man2">
+         </div>
+  </div>   
+</section>
+<!-- /*-------------------------------
+           new arrivals section
+      ------------------------------- */   -->
+  <a name="arrivals">
+  <section class="image-section ">
+       <h2>new arrivals</h2>
+        <div class="grid1 grid-three sale-sec images">
+          <a href="men.html" >
+          <div><figure> <img src="img (3).jpg" class="img1"><figcaption> HIP HOP SHOES </figcaption></figure></div> </a>
+          <a href="men.html">
+         <div><figure> <img src="img (2).jpg" class="img1"> <figcaption> JACKEY JOY SHOES </figcaption></figure></div></a>
+         <a href="men.html">
+          <div><figure> <img src="img (1).jpg" class="img1"><figcaption> FORMAL CUT SHOES</figcaption></figure></div></a>
+          
+       </div>
+
+  </section>
+
+</a>
+  
+<footer>
+  <div class="footer">
+       
+     <div class="content "><ion-icon name="mail"></ion-icon>
+       <div><a href="https://www.linkedin.com/in/gurleen-kaur-6658ba24b/"  target="_blank"> <ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a></div>
+       <div><a href="https://github.com/kaurguru"  target="_blank"><ion-icon name="logo-github"  class="github"></ion-icon></a></div>
+       <div><a href="https://www.youtube.com/@coding_with_ashna/videos"  target="_blank"><ion-icon name="logo-youtube"  class="youtube"></ion-icon></a></div>
+       <div><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJTKWlzjVNpjTLFWKsZclpvrnPsttLxhhcNknzSLNZqDwdCzXjcZhvngJwxFPJDWXCGwXGV" target="_blank"> <ion-icon name="mail" class="linkedin"></ion-icon></a></div><br>
+       <p>  &#169; Neelam</p> 
+       
+     </div>
+
+  </div>
+  
+</footer>
+ <script>
+
+let dropDown = document.getElementById("dropdown");
+function togglemenu(){
+  dropDown.classList.toggle("open");
+}
+
+ </script>  
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+
+ 
+
+ 
+</html>
